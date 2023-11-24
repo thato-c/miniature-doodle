@@ -4,6 +4,13 @@ public class Person {
     String last_name = "Doe";
     int age = 24;
 
+    // Create a class constructor
+    public Person(){
+        first_name = "John";
+        last_name = "Doe";
+        age = 24;
+    }
+
     // Set public method
     public void myPublicMethod(){
         System.out.println("Hello Person Public method!");
