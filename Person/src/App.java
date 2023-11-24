@@ -34,6 +34,7 @@ public class App {
         System.out.println(car.modelName + " " + car.modelYear);
         car.fullThrottle();
         car.speed(200);
+        car.honk(); // Access the method from superclass
 
         System.out.println("");
         System.out.println("====Communication View====");
