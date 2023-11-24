@@ -8,16 +8,30 @@ public class App {
         myMethod();
 
         // Create the Object
-        Person person = new Person();
-        Car car = new Car();
+        Person person = new Person("John", "Doe", 24);
+        Car car = new Car("Mustang", 1969);
 
-        // Display the Attributes
+        // Access the components of the Person class
+        System.out.println("");
+        System.out.println("====Person View====");
+        System.out.println("");
+
         System.out.println("Name: " + person.first_name + " " + person.last_name);
         System.out.println("Age: " + person.age);
+        // Set the value using the setter
+        person.setGender("Female");
+        // Get the value using the getter
+        System.out.println(person.getGender());
 
-        // Call the public method
-        person.myPublicMethod();
+        // Access the components of the Car class        
+        System.out.println("");
+        System.out.println("====Car View====");
+        System.out.println("");
+
+        System.out.println(car.modelName + " " + car.modelYear);
         car.fullThrottle();
         car.speed(200);
+
+        System.out.println("");
     }
 }

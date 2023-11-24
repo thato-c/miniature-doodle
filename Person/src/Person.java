@@ -1,21 +1,28 @@
 public class Person {
-    // Set attributes/fields
-    String first_name = "John";
-    String last_name = "Doe";
-    int age = 24;
-
-    // Create a class constructor
-    public Person(){
-        first_name = "John";
-        last_name = "Doe";
-        age = 24;
-    }
-
-    // Set public method
-    public void myPublicMethod(){
-        System.out.println("Hello Person Public method!");
-    }
-
+    
     // Remove the ability to override the value
-    final int identity_number = 56720936;   
+    final int identity_number = 56720936;
+    private String gender;
+
+    // Set attributes/fields
+    String first_name;
+    String last_name;
+    int age;  
+       
+    // Create a class constructor
+    public Person(String fname, String lname, int years){
+        this.first_name = fname;
+        this.last_name = lname;
+        this.age = years;
+    }
+
+    // Create a Getter
+    public String getGender(){
+        return gender;
+    }
+
+    // Create a Getter
+    public void setGender(String gender){
+        this.gender = gender;
+    }
 }

@@ -1,4 +1,12 @@
 public class Car {
+    String modelName;
+    int modelYear;
+
+    public Car(String name, int year){
+        modelName = name;
+        modelYear = year;
+    }
+
     // Create a fullThrottle() method
     public void fullThrottle(){
         System.out.println("The car is going as fast as it can!");
