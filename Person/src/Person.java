@@ -4,9 +4,9 @@ public class Person {
     String last_name = "Doe";
     int age = 24;
 
-    // Set method
-    static void myMethod(){
-        System.out.println("Hello World!");
+    // Set public method
+    public void myPublicMethod(){
+        System.out.println("Hello Public method!");
     }
 
     // Remove the ability to override the value
