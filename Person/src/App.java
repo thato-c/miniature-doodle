@@ -12,7 +12,6 @@ public class App {
         // Create the Object
         Person person = new Person("John", "Doe", 24);
         Car car = new Car("Mustang", 1969);
-        Animal animal = new Animal();
         Animal pig = new Pig();
         Animal dog = new Dog();
         Scanner scanner = new Scanner(System.in);
@@ -44,8 +43,8 @@ public class App {
         System.out.println("====Animal View====");
         System.out.println("");
 
-        animal.animalSound();
         pig.animalSound();
+        pig.sleep();
         dog.animalSound();
 
         System.out.println("");
