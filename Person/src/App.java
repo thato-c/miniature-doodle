@@ -1,7 +1,9 @@
 public class App {
     // Set attributes/fields
-    int x = 5;
+    String first_name = "John";
+    String last_name = "Doe";
+    int age = 24;
 
     // Remove the ability to override the value
-    final int y = 3;   
+    final int identity_number = 56720936;   
 }
