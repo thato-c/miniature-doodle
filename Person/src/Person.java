@@ -6,7 +6,7 @@ public class Person {
 
     // Set public method
     public void myPublicMethod(){
-        System.out.println("Hello Public method!");
+        System.out.println("Hello Person Public method!");
     }
 
     // Remove the ability to override the value
