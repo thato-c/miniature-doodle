@@ -12,6 +12,9 @@ public class App {
         // Create the Object
         Person person = new Person("John", "Doe", 24);
         Car car = new Car("Mustang", 1969);
+        Animal animal = new Animal();
+        Animal pig = new Pig();
+        Animal dog = new Dog();
         Scanner scanner = new Scanner(System.in);
 
         // Access the components of the Person class
@@ -35,6 +38,15 @@ public class App {
         car.fullThrottle();
         car.speed(200);
         car.honk(); // Access the method from superclass
+
+        // Access the components of the Car class        
+        System.out.println("");
+        System.out.println("====Animal View====");
+        System.out.println("");
+
+        animal.animalSound();
+        pig.animalSound();
+        dog.animalSound();
 
         System.out.println("");
         System.out.println("====Communication View====");
