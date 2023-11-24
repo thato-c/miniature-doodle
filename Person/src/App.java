@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App {
     static void myMethod(){
         System.out.println("Hello Application Static method!");
@@ -10,6 +12,7 @@ public class App {
         // Create the Object
         Person person = new Person("John", "Doe", 24);
         Car car = new Car("Mustang", 1969);
+        Scanner scanner = new Scanner(System.in);
 
         // Access the components of the Person class
         System.out.println("");
@@ -33,5 +36,12 @@ public class App {
         car.speed(200);
 
         System.out.println("");
+        System.out.println("====Communication View====");
+        System.out.println("");
+        System.out.println("Enter username");
+        String userName = scanner.nextLine();
+        System.out.println("Username is: " + userName);
+        System.out.println("");
+
     }
 }
