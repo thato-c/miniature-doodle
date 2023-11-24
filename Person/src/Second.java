@@ -1,6 +1,11 @@
 public class Second {
+    static void myMethod(){
+        System.out.println("Hello World!");
+    }
+
     public static void main(String[] args) throws Exception {
         // Access the attribute
+        myMethod();
         Person Object1 = new Person();
 
         // Display the Attributes
